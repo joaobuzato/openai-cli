@@ -7,15 +7,13 @@ async function generate(prompt) {
     apiKey: "POPULATE API KEY",
     organization: "POPULATE ORG ID",
   };
-  const openai = new OpenAI({
-    openaiParams,
-  });
+  const openai = new OpenAI(openaiParams);
   const completion = await openai.chat.completions.create({
     messages: [
       {
         role: "system",
         content:
-          "You are a helpful assistant. Anwser the following questions, please.",
+          "You are a helpful assistant. Anwser the following questions in brazillian portuguese, please.",
       },
       { role: "user", content: prompt },
     ],

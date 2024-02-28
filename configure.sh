@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Caminho para o script JavaScript
-SCRIPT_PATH="./src/index.js"
+SCRIPT_PATH="$(realpath src/index.js)"
 
 # Caminho onde o link simbólico será criado
 BIN_PATH="/usr/local/bin/openai-cli"
