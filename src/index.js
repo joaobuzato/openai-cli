@@ -3,9 +3,12 @@ import dotenv from "dotenv";
 dotenv.config();
 
 async function generate(prompt) {
+  const openaiParams = {
+    apiKey: "POPULATE API KEY",
+    organization: "POPULATE ORG ID",
+  };
   const openai = new OpenAI({
-    apiKey: process.env.OPENAI_API_KEY || "",
-    organization: process.env.OPENAI_ORG || "",
+    openaiParams,
   });
   const completion = await openai.chat.completions.create({
     messages: [

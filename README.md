@@ -4,7 +4,7 @@ This is a clean CLI to be executed on the command-line
 
 # Como usar?
 
-Popular .env com OPENAI_API_KEY e OPENAI_ORG com suas credenciais;
+Popular o objeto de openaiParams em ./src/index.js com suas configs de apiKey e organization
 
 Pode ser executado direto de dentro do projeto com
 `node start "Sua pergunta aqui"`
