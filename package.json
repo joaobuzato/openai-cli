@@ -1,0 +1,19 @@
+{
+  "name": "openai-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^20.11.21",
+    "dotenv": "^16.4.5",
+    "openai": "^4.28.0",
+    "typescript": "^5.3.3"
+  }
+}
